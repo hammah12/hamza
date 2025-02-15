@@ -1,198 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza Mahmood - Sales Leader</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f4f8;
-            color: #2c3e50;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #ecf0f1;
-            border-radius: 0 0 20px 20px;
-        }
-        header img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            border: 4px solid #ecf0f1;
-        }
-        header h1 {
-            margin: 10px 0;
-            font-size: 2.5em;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #bdc3c7;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: #34495e;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #2980b9;
-        }
-        .content {
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        #about {
-            background: linear-gradient(135deg, #e66465, #9198e5);
-            color: #ecf0f1;
-        }
-        #resume {
-            background: linear-gradient(135deg, #8e9eab, #eef2f3);
-            color: #34495e;
-        }
-        #contact {
-            background: linear-gradient(135deg, #f79cd3, #fbd3e1);
-            color: #34495e;
-        }
-        .schedule-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background-color: #2980b9;
-            color: #ecf0f1;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: background-color 0.3s;
-        }
-        .schedule-link:hover {
-            background-color: #3498db;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        .social-links a {
-            color: #34495e;
-            text-decoration: none;
-            font-size: 1.2em;
-            display: flex;
-            align-items: center;
-        }
-        .social-links a:hover {
-            color: #2980b9;
-        }
-        .social-links img {
-            width: 20px;
-            height: 20px;
-            margin-right: 5px;
-        }
-        section {
-            display: none;
-        }
-        section.active {
-            display: block;
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza Mahmood - Sales Leader</title>
+  <meta name="description" content="Hamza Mahmood - Sales Leader & Growth Expert with a proven track record of accelerating company growth from seed stage to Series B.">
+  <meta name="keywords" content="Sales Leader, Growth Expert, Resume, Hamza Mahmood, Sales">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #ecf0f1;
+      border-radius: 0 0 20px 20px;
+    }
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #ecf0f1;
+    }
+    header h1 {
+      margin: 10px 0;
+      font-size: 2.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #bdc3c7;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+    }
+    nav li {
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #34495e;
+      font-weight: bold;
+      transition: color 0.3s;
+      cursor: pointer;
+    }
+    nav a:hover {
+      color: #2980b9;
+    }
+    main {
+      position: relative;
+    }
+    main section {
+      display: none;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.5s ease;
+    }
+    main section.active {
+      display: block;
+      opacity: 1;
+    }
+    #about {
+      background: linear-gradient(135deg, #e66465, #9198e5);
+      color: #ecf0f1;
+    }
+    #resume {
+      background: linear-gradient(135deg, #8e9eab, #eef2f3);
+      color: #34495e;
+    }
+    #contact {
+      background: linear-gradient(135deg, #f79cd3, #fbd3e1);
+      color: #34495e;
+    }
+    .schedule-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #2980b9;
+      color: #ecf0f1;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+    .schedule-link:hover {
+      background-color: #3498db;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .social-links a {
+      color: #34495e;
+      text-decoration: none;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+    }
+    .social-links a:hover {
+      color: #2980b9;
+    }
+    .social-links svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav li {
+        margin: 0 10px;
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const sections = document.querySelectorAll("main section");
+      const navLinks = document.querySelectorAll("nav a");
+      
+      function showSection(sectionId) {
+        sections.forEach(section => {
+          if (section.id === sectionId) {
+            section.classList.add("active");
+          } else {
+            section.classList.remove("active");
+          }
+        });
+      }
+      
+      navLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+          e.preventDefault();
+          const sectionId = this.getAttribute("data-section");
+          showSection(sectionId);
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="https://ca.slack-edge.com/T68PUGK99-U01GJUYE79B-182395aa4298-512" alt="Hamza Mahmood">
-            <h1>Hey there! 👋 I'm Hamza Mahmood</h1>
-            <p>Sales Leader & Growth Expert</p>
-            <a class="schedule-link" href="https://calendar.app.google/2woRk8cZu4YnCfh59" target="_blank">Schedule a Meeting</a>
-        </header>
-        <nav>
-            <a href="#" onclick="showSection('about')">About Me</a>
-            <a href="#" onclick="showSection('resume')">Resume</a>
-            <a href="#" onclick="showSection('contact')">Contact</a>
-        </nav>
-        <section id="about" class="content active">
-            <h2>About Me</h2>
-            <p>I am a sales leader with a demonstrated history of accelerating company growth from seed stage to Series B. Skilled in scaling teams, optimizing processes, and achieving ambitious revenue targets through data-driven decision-making and cross-functional collaboration in the tech-adjacent space.</p>
-        </section>
-        <section id="resume" class="content">
-            <h2>Resume</h2>
-                <h3>HAMZA MAHMOOD</h3>
-                <h4>CONTACT</h4>
-                <p>(773) 727-9058</p>
-                <p>845 Deere Park Ct., Deerfield, IL</p>
-                <p><a href="mailto:hamza3mahmood@gmail.com">hamza3mahmood@gmail.com</a></p>
-                <h4>EDUCATION</h4>
-                <p><strong>LOYOLA UNIVERSITY CHICAGO</strong><br>MBA, Concentration in Finance<br>2020-2022</p>
-                <p><strong>LAKE FOREST COLLEGE</strong><br>Bachelor of Science, Biology<br>2014-2018</p>
-                <h4>SKILLS</h4>
-                <p>
-                    - Account Management<br>
-                    - Data-Driven Sales Optimization<br>
-                    - Salesforce, Hubspot<br>
-                    - Looker, Tableau<br>
-                    - Data Analysis<br>
-                    - Challenger Sales<br>
-                    - Team Building & Development<br>
-                    - Cross-Functional Collaboration
-                </p>
-                <h4>PROFESSIONAL SUMMARY</h4>
-                <p>Sales leader with a proven track record of accelerating company growth from seed stage to Series B. Skilled in scaling teams, optimizing processes, and achieving ambitious revenue targets through data-driven decision-making and cross-functional collaboration in the tech-adjacent space.</p>
-                <h4>WORK EXPERIENCE</h4>
-                <h5>HEAD OF SALES<br><strong>RenoFi</strong> (Jan 2023 - Present)</h5>
-                <p>
-                    - Led a high-performing inside sales team, consistently achieving and exceeding sales quotas.<br>
-                    - Scaled sales capacity from \$200K to \$900K monthly revenue over 1.5 years.<br>
-                    - Developed a dedicated SDR function, increasing conversion rates by 100% and successful contacts by 200%.<br>
-                    - Expanded the sales organization from 7 to 25 representatives through strategic talent acquisition.
-                </p>
-                <h5>SALES TEAM LEAD<br><strong>RenoFi</strong> (Dec 2020 - Jan 2023)</h5>
-                <p>
-                    - Exceeded individual sales quota while developing a team of six to achieve 125% above quota performance.<br>
-                    - Motivated and coached the sales team through daily KPIs and one-on-one coaching.<br>
-                    - Facilitated team success by creating weekly goal-setting and review meetings.
-                </p>
-                <h5>SALES EXECUTIVE<br><strong>Mark Vend Company</strong> (Aug 2018 - Dec 2020)</h5>
-                <p>
-                    - Consistently exceeded sales quotas, securing \$1.8M worth of new business.<br>
-                    - Closed major accounts including DocuSign, Facebook, and Groupon.<br>
-                    - Drove a 20% increase in sales through proactive value-added product suggestions.
-                </p>
-            </div>
-        </section>
-        <section id="contact" class="content">
-            <h2>Contact</h2>
-            <p>Phone: (773) 727-9058</p>
-            <p>Email: <a href="mailto:hamza3mahmood@gmail.com">hamza3mahmood@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/hamza-mahmood-906224175/" target="_blank">
-                </a>
-            </div>
-        </section>
-    </div>
+  <div class="container">
+    <header>
+      <img src="https://ca.slack-edge.com/T68PUGK99-U01GJUYE79B-182395aa4298-512" alt="Hamza Mahmood">
+      <h1>Hey there! 👋 I'm Hamza Mahmood</h1>
+      <p>Sales Leader & Growth Expert</p>
+      <a class="schedule-link" href="https://calendar.app.google/2woRk8cZu4YnCfh59" target="_blank">Schedule a Meeting</a>
+    </header>
+    <nav role="navigation">
+      <ul>
+        <li><a href="#" data-section="about">About Me</a></li>
+        <li><a href="#" data-section="resume">Resume</a></li>
+        <li><a href="#" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main id="content">
+      <section id="about" class="active">
+        <h2>About Me</h2>
+        <p>I am a sales leader with a demonstrated history of accelerating company growth from seed stage to Series B. Skilled in scaling teams, optimizing processes, and achieving ambitious revenue targets through data-driven decision-making and cross-functional collaboration in the tech-adjacent space.</p>
+      </section>
+      <section id="resume">
+        <h2>Resume</h2>
+        <h3>HAMZA MAHMOOD</h3>
+        <h4>CONTACT</h4>
+        <p>(773) 727-9058</p>
+        <p>845 Deere Park Ct., Deerfield, IL</p>
+        <p><a href="mailto:hamza3mahmood@gmail.com">hamza3mahmood@gmail.com</a></p>
+        <h4>EDUCATION</h4>
+        <p><strong>LOYOLA UNIVERSITY CHICAGO</strong><br>MBA, Concentration in Finance<br>2020-2022</p>
+        <p><strong>LAKE FOREST COLLEGE</strong><br>Bachelor of Science, Biology<br>2014-2018</p>
+        <h4>SKILLS</h4>
+        <p>
+          - Account Management<br>
+          - Data-Driven Sales Optimization<br>
+          - Salesforce, Hubspot<br>
+          - Looker, Tableau<br>
+          - Data Analysis<br>
+          - Challenger Sales<br>
+          - Team Building & Development<br>
+          - Cross-Functional Collaboration
+        </p>
+        <h4>PROFESSIONAL SUMMARY</h4>
+        <p>Sales leader with a proven track record of accelerating company growth from seed stage to Series B. Skilled in scaling teams, optimizing processes, and achieving ambitious revenue targets through data-driven decision-making and cross-functional collaboration in the tech-adjacent space.</p>
+        <h4>WORK EXPERIENCE</h4>
+        <h5>HEAD OF SALES<br><strong>RenoFi</strong> (Jan 2023 - Present)</h5>
+        <p>
+          - Led a high-performing inside sales team, consistently achieving and exceeding sales quotas.<br>
+          - Scaled sales capacity from $200K to $900K monthly revenue over 1.5 years.<br>
+          - Developed a dedicated SDR function, increasing conversion rates by 100% and successful contacts by 200%.<br>
+          - Expanded the sales organization from 7 to 25 representatives through strategic talent acquisition.
+        </p>
+        <h5>SALES TEAM LEAD<br><strong>RenoFi</strong> (Dec 2020 - Jan 2023)</h5>
+        <p>
+          - Exceeded individual sales quota while developing a team of six to achieve 125% above quota performance.<br>
+          - Motivated and coached the sales team through daily KPIs and one-on-one coaching.<br>
+          - Facilitated team success by creating weekly goal-setting and review meetings.
+        </p>
+        <h5>SALES EXECUTIVE<br><strong>Mark Vend Company</strong> (Aug 2018 - Dec 2020)</h5>
+        <p>
+          - Consistently exceeded sales quotas, securing $1.8M worth of new business.<br>
+          - Closed major accounts including DocuSign, Facebook, and Groupon.<br>
+          - Drove a 20% increase in sales through proactive value-added product suggestions.
+        </p>
+        <p><a href="Hamza_Mahmood_Resume_2024.pdf" target="_blank">Download Resume (PDF)</a></p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Phone: (773) 727-9058</p>
+        <p>Email: <a href="mailto:hamza3mahmood@gmail.com">hamza3mahmood@gmail.com</a></p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/hamza-mahmood-906224175/" target="_blank" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="#34495e" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.6 0 54.3 0 25 24.09 0 53.79 0c29.7 0 53.79 25 53.79 54.3 0 29.3-24.09 53.8-53.79 53.8zM447.9 448h-92.68V302.4c0-34.7-12.4-58.4-43.38-58.4-23.7 0-37.8 16-44 31.4-2.3 5.6-2.9 13.5-2.9 21.4V448h-92.68s1.2-236.5 0-261.1h92.68v37c-0.2 0.3-0.5 0.7-0.7 1h0.7v-1c12.3-19 34.3-46.2 83.3-46.2 60.8 0 106.4 39.8 106.4 125.4V448z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer style="text-align: center; padding: 20px 0;">
+      <p>&copy; 2024 Hamza Mahmood. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
